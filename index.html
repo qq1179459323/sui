@@ -251,6 +251,140 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/23/article-title/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="聊是无聊">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/header.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="聊是无聊的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/08/23/article-title/" itemprop="url">React ������</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-23T15:15:30+08:00">
+                2018-08-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="1-React����������"><a href="#1-React����������" class="headerlink" title="1. React����������"></a>1. React����������</h3><h3 id="����������ڵ�����״̬չʾ��"><a href="#����������ڵ�����״̬չʾ��" class="headerlink" title="����������ڵ�����״̬չʾ��"></a>����������ڵ�����״̬չʾ��</h3><ul>
+<li>Mounting: �Ѳ���������dom�ṹ </li>
+<li>Updating: ���ڱ�������Ⱦ </li>
+<li>Unmounting: ���Ƴ�����ʵdom�ṹ</li>
+</ul>
+<h3 id="2-����-�������ڵJ�������will��ʾ����״̬֮j���a�did��ʾ����״̬֮����a���"><a href="#2-����-�������ڵJ�������will��ʾ����״̬֮j���a�did��ʾ����״̬֮����a���" class="headerlink" title="2.���� �������ڵĴ�������will��ʾ����״̬֮ǰ���ã�did��ʾ����״̬֮����ã���"></a>2.���� �������ڵĴ�������will��ʾ����״̬֮ǰ���ã�did��ʾ����״̬֮����ã���</h3><ul>
+<li><strong>componentWillMount()</strong> :<br>�����Ҫ��Ⱦ����ʵdom�ڵ㣻ִ��һ�Σ��ڳ�ʼ��render֮ǰִ�У��������������ڵ���setState��render()֪��state�����仯������ִֻ��һ��</li>
+<li><strong>componentDidMount()</strong><br>//����Ѿ���Ⱦ����ʵdom�ڵ㣻�ڳ�ʼ��render֮��ִֻ��һ�Σ�����������ڣ����Է����κ������componentDidMount()�����е�������ڸ����֮ǰִ�У�<br>�����������ʼ���Ϳ��Ժ� js ������ܽ����ˣ��������ü�ʱ setTimeout ���� setInterval�����߷�����������</li>
+<li><strong>componentWillUpdate()</strong>//��props��state�����仯�������Ҫ��������Ⱦ��������render����֮ǰִ�У���Ȼ��ʼ��renderʱ��ִ�и÷�������Ҫ�ر�ע����ǣ�������������棬��Ͳ���ʹ��this.setState���޸�״̬�������������֮�󣬾ͻ��nextProps��nextState�ֱ����õ�this.props��this.state�С����������������ͻ����render()�����½�����</li>
+<li><strong>componentDidUpdate()</strong>//����Ѿ����������Ⱦ���ڳ�ʼ��renderʱ��ִ��</li>
+<li><strong>componentWillUnmout()</strong>//ж�������������ת·�ɵ�ʱ��</li>
+<li><strong>componentWillReceiveProps()</strong> //�Ѿ��������props�����ı��ʱ����ã�������ص��������棬����Ը������Եı仯��ͨ������this.setState()������������״̬���ɵ����Ի��ǿ���ͨ��this.props����ȡ,������ø���״̬�ǰ�ȫ�ģ������ᴥ�������render����</li>
+<li><strong>shouldComponentUpdate()</strong>//����ж��Ƿ�Ҫ������Ⱦ��ʱ����ã��ڳ�ʼ��renderʱ����ִ�У���props����state�����仯ʱִ�У���������render֮ǰ�����µ�props����state����Ҫ�������ʱ������false<h4 id="3-��������������ڵ�ִ��˳��-����ͼ��ʾ��"><a href="#3-��������������ڵ�ִ��˳��-����ͼ��ʾ��" class="headerlink" title="3. ��������������ڵ�ִ��˳�� ����ͼ��ʾ��"></a>3. ��������������ڵ�ִ��˳�� ����ͼ��ʾ��</h4><img src="https://note.youdao.com/yws/public/resource/ab2cc4cb6abd27779a98343b11256d86/xmlnote/D3F2B8C7A6A04D8F99722AF34EEA9F36/851A0C31E6A749EB948EE8F6B5C6E006/88" alt="image"><h3 id="3-react�������LӺ�һЩС��֪ʶ��"><a href="#3-react�������LӺ�һЩС��֪ʶ��" class="headerlink" title="3.react�������ĿӺ�һЩС��֪ʶ��:"></a>3.react�������ĿӺ�һЩС��֪ʶ��:</h3><h4 id="setState-���첽��"><a href="#setState-���첽��" class="headerlink" title="- setState()���첽��:"></a>- setState()���첽��:</h4>this.setState()�����render�������������������ı�state��ֵ��state����render�����и�ֵ�ġ�<br>����ִ��this.setState()��������ȡstate��ֵ�ǲ���ġ�<br>ͬ����ֱ�Ӹ�ֵstate������������£���Ϊû�е���render������<h4 id="�������������"><a href="#�������������" class="headerlink" title="- �������������"></a>- �������������</h4>componentWillMount��componentDidMount ֻ���ڳ�ʼ����ʱ��ŵ��á�<br>componentWillReceivePorps��shouldComponentUpdate��componentWillUpdata��componentDidUpdate ֻ������ڸ��µ�ʱ��ű����ã���ʼ��ʱ�����á�<h4 id="reducer���뷵��һ���µK�����ܳ�������ĸ���"><a href="#reducer���뷵��һ���µK�����ܳ�������ĸ���" class="headerlink" title="- reducer���뷵��һ���µĶ�����ܳ�������ĸ���"></a>- reducer���뷵��һ���µĶ�����ܳ�������ĸ���</h4>��Ϊ��connect�����л���¾�����state����ǳ�Աȣ����stateֻ��ֵ�ı䵫�����õ�ַû�иı䣬connect����Ϊ������ͬ�����������¡�<h4 id="����reducer���ص�state�Ƿ�i䣬subscribe��ע������лص��������ᱻ������"><a href="#����reducer���ص�state�Ƿ�i䣬subscribe��ע������лص��������ᱻ������" class="headerlink" title="- ����reducer���ص�state�Ƿ�ı䣬subscribe��ע������лص��������ᱻ������"></a>- ����reducer���ص�state�Ƿ�ı䣬subscribe��ע������лص��������ᱻ������</h4><h4 id="�������������ĸ�����G�д�������������L淶��"><a href="#�������������ĸ�����G�д�������������L淶��" class="headerlink" title="- �������������ĸ�����Ǵ�д�������������Ĺ淶��"></a>- �������������ĸ�����Ǵ�д�������������Ĺ淶��</h4><h4 id="���ж��֮j������domԪ���ϵl����¼����Ͷ�ʱ����Ҫ�ֶ��������Ϊ��Щ������react�L��Ʒ�Χ�ڣ������ֶ������"><a href="#���ж��֮j������domԪ���ϵl����¼����Ͷ�ʱ����Ҫ�ֶ��������Ϊ��Щ������react�L��Ʒ�Χ�ڣ������ֶ������" class="headerlink" title="- ���ж��֮ǰ������domԪ���ϵļ����¼����Ͷ�ʱ����Ҫ�ֶ��������Ϊ��Щ������react�Ŀ��Ʒ�Χ�ڣ������ֶ������"></a>- ���ж��֮ǰ������domԪ���ϵļ����¼����Ͷ�ʱ����Ҫ�ֶ��������Ϊ��Щ������react�Ŀ��Ʒ�Χ�ڣ������ֶ������</h4><h4 id="�������ʱ��������ͨ��export-default-��¶��z����orequire-ensureʱ�������default��"><a href="#�������ʱ��������ͨ��export-default-��¶��z����orequire-ensureʱ�������default��" class="headerlink" title="- �������ʱ��������ͨ��export default ��¶��ȥ����ôrequire.ensureʱ�������default��"></a>- �������ʱ��������ͨ��export default ��¶��ȥ����ôrequire.ensureʱ�������default��</h4></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">require.ensure([], require =&gt; &#123;</span><br><span class="line">    cb(null, require(&apos;../Component/saleRecord&apos;).default)</span><br><span class="line">&#125;,&apos;saleRecord&apos;)</span><br></pre></td></tr></table></figure>
+<h4 id="react��·����hashHistory��browserHistory��hashHistory��hash-������ת��һ��������ʽ���ϲ���browserHistory������ͨ�j�ַ��ת��һ�����ڿ����׶Ρ�"><a href="#react��·����hashHistory��browserHistory��hashHistory��hash-������ת��һ��������ʽ���ϲ���browserHistory������ͨ�j�ַ��ת��һ�����ڿ����׶Ρ�" class="headerlink" title="- react��·����hashHistory��browserHistory��hashHistory��hash#������ת��һ��������ʽ���ϲ���browserHistory������ͨ�ĵ�ַ��ת��һ�����ڿ����׶Ρ�"></a>- react��·����hashHistory��browserHistory��hashHistory��hash#������ת��һ��������ʽ���ϲ���browserHistory������ͨ�ĵ�ַ��ת��һ�����ڿ����׶Ρ�</h4><h4 id="��k���o��g�for-Ҫд��htmlFor����Ϊfor�Ѿ����˹ؼ��֡�"><a href="#��k���o��g�for-Ҫд��htmlFor����Ϊfor�Ѿ����˹ؼ��֡�" class="headerlink" title="- ��ǩ���õ��ģ�for Ҫд��htmlFor����Ϊfor�Ѿ����˹ؼ��֡�"></a>- ��ǩ���õ��ģ�for Ҫд��htmlFor����Ϊfor�Ѿ����˹ؼ��֡�</h4><h4 id="componentWillUpdate�п���ֱ�Ӹi�state��ֵ����������setState��"><a href="#componentWillUpdate�п���ֱ�Ӹi�state��ֵ����������setState��" class="headerlink" title="- componentWillUpdate�п���ֱ�Ӹı�state��ֵ����������setState��"></a>- componentWillUpdate�п���ֱ�Ӹı�state��ֵ����������setState��</h4><h4 id="���ʹ��es6class��̳�react��component�����constructor�б������super����Ϊ���������super�̳�component��this������ʵ������ʱ��ᱨ��"><a href="#���ʹ��es6class��̳�react��component�����constructor�б������super����Ϊ���������super�̳�component��this������ʵ������ʱ��ᱨ��" class="headerlink" title="- ���ʹ��es6class��̳�react��component�����constructor�б������super����Ϊ���������super�̳�component��this������ʵ������ʱ��ᱨ��"></a>- ���ʹ��es6class��̳�react��component�����constructor�б������super����Ϊ���������super�̳�component��this������ʵ������ʱ��ᱨ��</h4><h4 id="���ж��֮j������domԪ���ϵl����¼����Ͷ�ʱ����Ҫ�ֶ��������Ϊ��Щ������react�L��Ʒ�Χ�ڣ������ֶ������ָ������this-refs-xxx������ʵdom��addEventListener������ӵl����¼��������ж�ص�ʱ��Ҫ�ֶ����-removeEventListener-��react����ϵ�onClick���ֲ��uܣ�react�����G������"><a href="#���ж��֮j������domԪ���ϵl����¼����Ͷ�ʱ����Ҫ�ֶ��������Ϊ��Щ������react�L��Ʒ�Χ�ڣ������ֶ������ָ������this-refs-xxx������ʵdom��addEventListener������ӵl����¼��������ж�ص�ʱ��Ҫ�ֶ����-removeEventListener-��react����ϵ�onClick���ֲ��uܣ�react�����G������" class="headerlink" title="- ���ж��֮ǰ������domԪ���ϵļ����¼����Ͷ�ʱ����Ҫ�ֶ��������Ϊ��Щ������react�Ŀ��Ʒ�Χ�ڣ������ֶ������ָ������this.refs.xxx������ʵdom��addEventListener������ӵļ����¼��������ж�ص�ʱ��Ҫ�ֶ����(removeEventListener)��react����ϵ�onClick���ֲ��ùܣ�react�����Ǵ������"></a>- ���ж��֮ǰ������domԪ���ϵļ����¼����Ͷ�ʱ����Ҫ�ֶ��������Ϊ��Щ������react�Ŀ��Ʒ�Χ�ڣ������ֶ������ָ������this.refs.xxx������ʵdom��addEventListener������ӵļ����¼��������ж�ص�ʱ��Ҫ�ֶ����(removeEventListener)��react����ϵ�onClick���ֲ��ùܣ�react�����Ǵ������</h4>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/23/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -338,125 +472,6 @@
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">require.ensure([], require =&gt; &#123;</span><br><span class="line">    cb(null, require(&apos;../Component/saleRecord&apos;).default)</span><br><span class="line">&#125;,&apos;saleRecord&apos;)</span><br></pre></td></tr></table></figure>
 <h4 id="react的路由有hashHistory和browserHistory，hashHistory由hash-控制跳转，一般用于正式线上部署，browserHistory就是普通的地址跳转，一般用于开发阶段。"><a href="#react的路由有hashHistory和browserHistory，hashHistory由hash-控制跳转，一般用于正式线上部署，browserHistory就是普通的地址跳转，一般用于开发阶段。" class="headerlink" title="- react的路由有hashHistory和browserHistory，hashHistory由hash#控制跳转，一般用于正式线上部署，browserHistory就是普通的地址跳转，一般用于开发阶段。"></a>- react的路由有hashHistory和browserHistory，hashHistory由hash#控制跳转，一般用于正式线上部署，browserHistory就是普通的地址跳转，一般用于开发阶段。</h4><h4 id="标签里用到的，for-要写成htmlFor，因为for已经成了关键字。"><a href="#标签里用到的，for-要写成htmlFor，因为for已经成了关键字。" class="headerlink" title="- 标签里用到的，for 要写成htmlFor，因为for已经成了关键字。"></a>- 标签里用到的，for 要写成htmlFor，因为for已经成了关键字。</h4><h4 id="componentWillUpdate中可以直接改变state的值，而不能用setState。"><a href="#componentWillUpdate中可以直接改变state的值，而不能用setState。" class="headerlink" title="- componentWillUpdate中可以直接改变state的值，而不能用setState。"></a>- componentWillUpdate中可以直接改变state的值，而不能用setState。</h4><h4 id="如果使用es6class类继承react的component组件，constructor中必须调用super，因为子类必须用super继承component的this，否则实例化的时候会报错。"><a href="#如果使用es6class类继承react的component组件，constructor中必须调用super，因为子类必须用super继承component的this，否则实例化的时候会报错。" class="headerlink" title="- 如果使用es6class类继承react的component组件，constructor中必须调用super，因为子类必须用super继承component的this，否则实例化的时候会报错。"></a>- 如果使用es6class类继承react的component组件，constructor中必须调用super，因为子类必须用super继承component的this，否则实例化的时候会报错。</h4><h4 id="组件卸载之前，加在dom元素上的监听事件，和定时器需要手动清除，因为这些并不在react的控制范围内，必须手动清除。指的是在this-refs-xxx这种真实dom上addEventListener这样添加的监听事件，在组件卸载的时候要手动清除-removeEventListener-，react组件上的onClick这种不用管，react帮我们处理好了"><a href="#组件卸载之前，加在dom元素上的监听事件，和定时器需要手动清除，因为这些并不在react的控制范围内，必须手动清除。指的是在this-refs-xxx这种真实dom上addEventListener这样添加的监听事件，在组件卸载的时候要手动清除-removeEventListener-，react组件上的onClick这种不用管，react帮我们处理好了" class="headerlink" title="- 组件卸载之前，加在dom元素上的监听事件，和定时器需要手动清除，因为这些并不在react的控制范围内，必须手动清除。指的是在this.refs.xxx这种真实dom上addEventListener这样添加的监听事件，在组件卸载的时候要手动清除(removeEventListener)，react组件上的onClick这种不用管，react帮我们处理好了"></a>- 组件卸载之前，加在dom元素上的监听事件，和定时器需要手动清除，因为这些并不在react的控制范围内，必须手动清除。指的是在this.refs.xxx这种真实dom上addEventListener这样添加的监听事件，在组件卸载的时候要手动清除(removeEventListener)，react组件上的onClick这种不用管，react帮我们处理好了</h4>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/02/article-title/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="聊是无聊">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/header.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="聊是无聊的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/08/02/article-title/" itemprop="url">React ������</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-02T15:15:30+08:00">
-                2018-08-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            
           
         
       
